@@ -3,8 +3,8 @@
 get_header();
 
 $title = get_field('page_title');
-$text = get_field('page_description');
-//Får inte bilder att fungera. Behöver de inte laddas upp på något sätt?
+$descriptionTitle = get_field('page_description_title');
+$description = get_field('page_description');
 $image = get_field('page_image');
 $link = get_field('page_link');
 
@@ -17,7 +17,6 @@ $link = get_field('page_link');
       <div class="d-flex flex-row-reverse justify-content-center p-4">
         <div class="row d-flex flex-row-reverse">
           <div class="col-lg-6">
-            <img class="img-fluid" src="/img/hologram.png">
           </div>
           <div class="col-lg-6 text-light d-flex flex-column justify-content-center align-items-center">
             <h1 class="display-1"><?php echo $title; ?></h1>
@@ -29,17 +28,16 @@ $link = get_field('page_link');
 
   <section class="generic" id="about">
     <div class="container">
-      <h2 class="display-5 mb-2">Description</h2>
+      <h2 class="display-5 mb-2"><?php echo $descriptionTitle; ?></h2>
       <div class="row mb-3">
         <div class="col-sm-12 col-md-6">
           <div class="d-flex h-50 flex-column justify-content-center mt-5">
-            <p><?php echo $text; ?>
+            <p><?php echo $description; ?>
             </p>
           </div>
         </div>
 
         <div class="col-sm-12 col-md-3 p-0">
-          <img class="img-fluid" src="<?php echo $image; ?>">
         </div>
         <div class="col-sm-12 col-md-3"></div>
       </div>
