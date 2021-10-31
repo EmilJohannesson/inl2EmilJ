@@ -44,14 +44,6 @@ $link = get_field('page_link');
     </div>
   </section>
 
-  <footer class="text-center text-lg-start">
-    <div class="footer text-center text-light p-3">
-      © 2021 Copyright:
-      <a class="text-light" href="<?php echo $link['url']; ?>"> <?php echo $link['title']; ?></a>
-    </div>
-  </footer>
-
-
 <?
 get_footer();
 ?>
