@@ -6,6 +6,3 @@ function addStyles(){
 }
 
 add_action('wp_enqueue_scripts', 'addStyles');
-
-
-?>
