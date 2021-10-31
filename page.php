@@ -32,6 +32,7 @@ $link = get_field('page_link');
       <div class="row mb-3">
         <div class="col-sm-12 col-md-6">
           <div class="d-flex h-50 flex-column justify-content-center mt-5">
+          <a href="<?php echo $link['url']; ?>"><?php echo $link['title']; ?></a>
             <p><?php echo $text; ?>
             </p>
           </div>
