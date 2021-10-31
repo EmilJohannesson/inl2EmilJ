@@ -4,7 +4,7 @@ get_header();
 
 $title = get_field('page_title');
 $descriptionTitle = get_field('page_description_title');
-$description = get_field('page_description');
+$text = get_field('page_description');
 $image = get_field('page_image');
 $link = get_field('page_link');
 
@@ -32,13 +32,19 @@ $link = get_field('page_link');
       <div class="row mb-3">
         <div class="col-sm-12 col-md-6">
           <div class="d-flex h-50 flex-column justify-content-center mt-5">
-            <a href="<?php echo $link['url']; ?>"><?php echo $link['title']; ?></a>
-            <p><?php echo $description; ?></p>
+          <a href="<?php echo $link['url']; ?>"><?php echo $link['title']; ?></a>
+            <p><?php echo $text; ?>
+            </p>
           </div>
         </div>
+
+        <div class="col-sm-12 col-md-3 p-0">
+          <img class="img-fluid" src="<?php echo $image; ?>">
+        </div>
+        <div class="col-sm-12 col-md-3"></div>
+      </div>
     </div>
   </section>
-
-<?php
+  <?php
 get_footer();
 ?>
