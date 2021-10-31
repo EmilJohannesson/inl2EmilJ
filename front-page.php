@@ -44,6 +44,6 @@ $link = get_field('page_link');
     </div>
   </section>
 
-<?
+<?php
 get_footer();
 ?>

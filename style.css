@@ -20,5 +20,18 @@ header {
 }
 
 .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
     background: linear-gradient(rgba(87, 28, 28, 0.9), rgba(0,0,0, .9));
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
 }
