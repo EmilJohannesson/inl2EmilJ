@@ -6,3 +6,10 @@ function addStyles(){
 }
 
 add_action('wp_enqueue_scripts', 'addStyles');
+add_theme_support('menus');
+
+register_nav_menus(
+    array(
+        'main-menu' => 'primary'
+    )
+    );
